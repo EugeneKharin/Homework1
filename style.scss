@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.background-image {
+    background-image: url(Image/background_hw-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.center {
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
+}
+
+.top {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: left;
+
+
+    &__head {
+        margin-top: 217px;
+        margin-bottom: 32px;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        grid-column: span 8;
+
+
+    }
+
+    &__text {
+        margin-bottom: 44px;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        grid-column: span 5;
+    }
+
+
+}
+
+.button {
+    border-radius: 30px;
+    background: #9C0332;
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    margin-bottom: 494px;
+}
+
+
+.content {
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    padding-bottom: 128px;
+
+    &__link {
+        text-decoration: none;
+        grid-column: span 4
+    }
+
+    &__box {
+        .content__box {
+            height: 300px;
+            ;
+            background-image: none;
+
+        }
+
+    }
+
+    &__box__img1 {
+        background-image: url(Image/game1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 16px;
+
+    }
+
+    &__box__img2 {
+        background-image: url(Image/game2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 16px;
+
+    }
+
+    &__box__img3 {
+        background-image: url(Image/game3.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 16px;
+
+
+    }
+}
+
+
+
+.box__head {
+    padding-left: 32px;
+    padding-right: 268px;
+    padding-top: 236px;
+    padding-bottom: 32px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px
+}
