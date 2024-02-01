@@ -54,4 +54,4 @@ console.log(user[info]);
 //Задание 10
 let nameInfo = prompt("Как вас зовут?");
 let nameSave = [nameInfo];
-console.logaf(`Привет,${nameInfo}!`)
+console.log(`Привет,${nameInfo}!`)
