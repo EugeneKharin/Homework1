@@ -6,7 +6,7 @@ console.log(a += 10);
 let release = (2007);
 console.log(release);
 //Задание 3
-let nameAuthor = ('Brendan Eich')
+let nameAuthor = 'Brendan Eich'
 console.log(nameAuthor);
 //Задание 4
 let ten = (10);
@@ -37,7 +37,7 @@ let ageTask8 = prompt("Сколько вам лет?");
 console.log(ageTask8);
 //Задание 9
 const user = {
-name: ('Markus Alexej Persson'),
+name: 'Markus Alexej Persson',
 age: (44),
 isAdmin:(true),
 };
@@ -53,5 +53,4 @@ let info = prompt("Какую информацию хотите узнать о 
 console.log(user[info]);
 //Задание 10
 let nameInfo = prompt("Как вас зовут?");
-let nameSave = [nameInfo];
 console.log(`Привет,${nameInfo}!`)
