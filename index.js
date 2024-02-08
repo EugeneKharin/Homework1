@@ -1,56 +1,101 @@
 //Задание 1
-let a = 10;
-console.log(a)
-console.log(a += 10);
-//Задание 2
-let release = 2007;
-console.log(release);
-//Задание 3
-let nameAuthor = 'Brendan Eich'
-console.log(nameAuthor);
-//Задание 4
-let ten = 10;
-let two = 2;
-console.log(ten + two);
-console.log(ten - two);
-console.log(ten * two);
-console.log(ten / two);
-//Задание 5
-let five = 5;
-let resultTask5 = (two ** five); //Значение "2"(переменная "two") взято из задания 4 
-console.log(resultTask5);
-//Задание 6
-let nine = 9;
-let resultTask6 = (nine % two);//Значение "2"(переменная "two") взято из задания 4 
-console.log(resultTask6);
-//Задание 7
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num++;
-num--;
-console.log(num); //реузльтат "7"
-//Задание 8
-let ageTask8 = prompt("Сколько вам лет?");
-console.log(ageTask8);
-//Задание 9
-const user = {
-name: 'Markus Alexej Persson',
-age: 44,
-isAdmin:true,
+let password = 'пароль';
+let message = prompt('Введите пароль');
+if (message === 'пароль') {
+    console.log('Пароль введен верно')
+} else {
+    console.log('Пароль введен неправильно')
 };
-console.log(user);
-//Задание 9.1
-user ['city_of_residence'] = 'Stockholm';
-//Задание 9.2 
-user ['age'] = 90;
-//Задание 9.3
-delete user.city_of_residence;
-//Задание 9.4
-let info = prompt("Какую информацию хотите узнать о пользователе?");
-console.log(user[info]);
-//Задание 10
-let nameInfo = prompt("Как вас зовут?");
-console.log(`Привет,${nameInfo}!`)
+//Задание 2
+let c = Number(prompt('Введите значение'));
+if (c >= 0 && c <= 10) {
+    console.log('Верно');
+} else {
+    console.log('Неверно');
+}
+//Задание 3
+let d = Number(prompt('Введите значение'));
+let e = Number(prompt('Введите значение'));
+if (d > 100 || e > 100) {
+    console.log('Верно');
+} else {
+    console.log('Неверно');
+}
+//Задание 4
+let a = '2';
+let b = '3';
+alert(+a + +b);
+//Задание 5
+let winter = 'Зима';
+let spring = 'Весна';
+let summer = 'Лето';
+let autumn = 'Осень';
+let switchNumber = Number(prompt('Введите номер месяца'));
+switch (switchNumber) {
+    case (12):
+    case 1:
+    case 2:
+        console.log(winter);
+        break;
+    case 3:
+    case 4:
+    case 5:
+        console.log(spring);
+        break;
+    case 6:
+    case 7:
+    case 8:
+        console.log(summer);
+        break;
+    case 9:
+    case 10:
+    case 11:
+        console.log(autumn);
+        break;
+    default:
+        console.log('Неверно введён номер месяца');
+        break;
+}
+//Задание 7
+let anyNumber = (prompt('Пожалуйста, введите любое число'))
+if (isNaN(anyNumber)) {
+    console.log(Number(anyNumber));
+} else {
+    if (anyNumber % 2 == 0) {
+        console.log('Чётное')
+    } else {
+        console.log('Нечётное')
+    }
+
+}
+//Задание 8
+let clienOS = 1 || 0
+if (clienOS === 1) {
+    console.log('Установите версию приложения для Android по ссылке')
+} else (clienOS === 0)
+{
+    console.log('Установите версию приложения для iOS по ссылке')
+}
+//Задание 9
+let clienOS2 = 1 || 0
+let year = 2015
+
+
+if (year <= 2015) {
+    if (clienOS === 1) {
+        console.log('Установите облегченную версию приложения для Android по ссылке')
+    } else (clienOS === 0)
+    console.log('Установите облегченную версию приложения для IOS по ссылке')
+    {
+
+    }
+} else {
+    if (clienOS === 1) {
+        console.log('Установите версию приложения для Android по ссылке')
+    } else (clienOS === 0)
+    console.log('Установите облегченную версию приложения для IOS по ссылке')
+    {
+
+    }
+
+}
