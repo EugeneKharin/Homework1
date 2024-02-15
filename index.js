@@ -23,8 +23,8 @@ const salary = {
     Петя: 400
 
 };
-for (Коля in salary) {
-    console.log('Коля — зарплата ' + salary['Коля'] + ' долларов');
+for (key in salary) {
+    console.log(key + '— зарплата ' + salary[key] + ' долларов');
 };
 
 //Задание 5
