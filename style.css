@@ -106,4 +106,34 @@
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
+}
+
+@media (max-width: 767px) {
+  .top {
+    padding-left: 16px;
+    padding-right: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .top__head {
+    padding-top: 238px;
+    text-align: center;
+    font-size: 32px;
+  }
+  .top__text {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+  .button {
+    margin-left: 70px;
+    margin-right: 70x;
+    margin-bottom: 366px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
