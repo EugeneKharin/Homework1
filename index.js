@@ -1,92 +1,69 @@
 //задание 1
 function returnNumber(a, b) {
-    if (a > b) {
-        console.log(b);
+    if (a < b) {
+        return b;
     } else {
-        console.log(a);
+        return a;
     }
 
 }
-returnNumber(89, 8)
-returnNumber(149, 14313)
-returnNumber(145, 145)
-//задание 2
+//задание 2 
 function even(a) {
     if (a % 2 === 0) {
-        console.log('Чётное число');
+        return ('Чётное число');
     } else {
-        console.log('Нечётное число');
+        return ('Нечётное число');
     }
 
 }
-even(55)
-even(2)
-even(1)
 //Задание 3.1
 
 function quadro(a) {
-
-    return Math.sqrt(a);
+    console.log(Math.sqrt(a));
 }
 
 function quadroIN(a) {
+    
     return Math.pow(a, 2);
 }
-
-let result1 = quadro(144);
-let result2 = quadroIN(12)
-
-console.log(`${result1}, ${result2}`);
 //Задание 4
 
 
-function age(a) {
-    if (a > 12) {
-        console.log('Добро пожаловать!');
-    } else if (a >= 0 && a <= 12) {
+function age() {
+    let a = prompt('сколько вам лет')
+    if (a < 0) {
+        console.log('Вы ввели неправильное значение');
+    } else if (a > 0 && a <= 12) {
         console.log('Привет, друг!');
     }
-    else console.log('Вы ввели неправильное значение');
+    else console.log('Добро пожаловать!');
 
 
 }
-age(-1)
-age(11)
-age(15)
+
 //Задание 5
-function number1(a, c) {
-    if (!isNaN(a && c) === true) {
-        let mult = a * c
-        console.log(mult);
+function number1(a, b) {
+    if (isNaN(a) || isNaN(b)) {
+        return 'Одно или оба значения не являются числом'
     } else {
-        console.log('Одно или оба значения не являются числом');
+        return a * b;
     }
 
 }
 number1(12, "dgsd")
 number1(12, 12)
 //Задание 6
-function number2(a) {
-    if (!isNaN(a) === true) {
-        let quadro6 = Math.pow(a, 2)
-        console.log(`${a} в кубе равняется ${quadro6}`);
+function number2() {
+    let num = promt ('Введиткк число');
+    num = Number(num);
+    if (isNaN(num)) {
+        return 'Переданниый параметр не является числом'
     } else {
-        console.log("Переданный параметр не является числом");
+        return `${num} в кубе равняется ${num ** 3}`;
     }
 
 }
-number2('da')
-number2(0)
-number2(1)
-number2(2)
-number2(3)
-number2(4)
-number2(5)
-number2(6)
-number2(7)
-number2(8)
-number2(9)
-number2(10)
+
 //Задание 7
 function getArea() {
     return Math.PI * this.radius ** 2
@@ -109,7 +86,7 @@ circle1.getPerimetr()
 //Задание 8
 function firstGame(a) {
     switch (a) {
-        case (12):
+        case 12:
         case 1:
         case 2:
             console.log("Зима");
