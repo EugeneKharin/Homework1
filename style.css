@@ -144,6 +144,23 @@
 }
 .firstGame__img {
   padding-top: 361px;
+  padding-bottom: 233px;
+}
+
+.firstGame__button__size {
+  border-radius: 30px;
+  background: #9C0332;
+  padding-left: 74px;
+  padding-right: 74px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
 }
 
 @media (max-width: 767px) {
@@ -175,41 +192,43 @@
     padding-right: 16px;
   }
 }
-.firstGame {
-  padding-left: 16px;
-  padding-right: 16px;
-  display: flex;
-  flex-direction: column;
-}
-.firstGame__img {
-  padding-top: 0px;
-}
-.firstGame__text__sizeT {
-  display: block;
-  text-align: center;
-  font-size: 14px;
-}
-.firstGame__text__sizeH {
-  text-align: center;
-  font-size: 32px;
-}
-.firstGame__button {
-  margin-bottom: 64px;
-  display: block;
-  text-align: center;
-}
-.firstGame__button__size {
-  border-radius: 30px;
-  background: #9C0332;
-  padding-left: 74px;
-  padding-right: 74px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  color: #FFF;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  border: none;
+@media (max-width: 767px) {
+  .firstGame {
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  .firstGame__img {
+    padding-top: 0px;
+  }
+  .firstGame__text__sizeT {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+  .firstGame__text__sizeH {
+    text-align: center;
+    font-size: 32px;
+  }
+  .firstGame__button {
+    margin-bottom: 64px;
+    display: block;
+    text-align: center;
+  }
+  .firstGame__button__size {
+    border-radius: 30px;
+    background: #9C0332;
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+  }
 }/*# sourceMappingURL=style.css.map */

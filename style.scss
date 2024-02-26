@@ -135,6 +135,8 @@
 
 }
 
+
+
 .content__box:hover {
     color: #44D2FF;
     box-shadow: inset 0 0 0 3px #3a7999;
@@ -174,11 +176,29 @@
 
     &__img {
         padding-top: 361px;
+        padding-bottom: 233px;
 
       
 
 
     }
 }
+.firstGame__button__size {
+    border-radius: 30px;
+    background: #9C0332;
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+        }
+
 
 @import 'mobile';
+

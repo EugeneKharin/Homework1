@@ -38,8 +38,7 @@
         padding-right: 16px;
     }
 }
-
-.firstGame {
+@media (max-width: 767px) {.firstGame {
     padding-left: 16px;
     padding-right: 16px;
     display: flex;
@@ -83,4 +82,6 @@
     border: none;
         }
     }
-}
+
+
+}}
