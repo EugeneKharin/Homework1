@@ -201,6 +201,14 @@
   }
   .firstGame__img {
     padding-top: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .firstGame__img__size {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 344px;
+    height: 236px;
   }
   .firstGame__text__sizeT {
     display: block;

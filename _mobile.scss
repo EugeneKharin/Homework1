@@ -33,55 +33,72 @@
     .content {
         display: flex;
         flex-direction: column;
-
         padding-left: 16px;
         padding-right: 16px;
     }
 }
-@media (max-width: 767px) {.firstGame {
-    padding-left: 16px;
-    padding-right: 16px;
-    display: flex;
-    flex-direction: column;
 
-    &__img {
-        padding-top: 0px;
-    }
+@media (max-width: 767px) {
+    .firstGame {
+        padding-left: 16px;
+        padding-right: 16px;
+        display: flex;
+        flex-direction: column;
+        
+       
+        &__img {
+            padding-top: 0px;
+display: flex;
+            justify-content: center;
+            &__size {
+                padding-left: 16px;
+                padding-right: 16px;
+                width: 344px;
+                height: 236px;
+    
+        
+            }
 
-    &__text {
-        &__sizeT {
+
+        }
+
+
+        &__text {
+            &__sizeT {
+                display: block;
+                text-align: center;
+                font-size: 14px;
+            }
+
+            &__sizeH {
+                text-align: center;
+                font-size: 32px;
+            }
+
+        }
+
+        &__button {
+            margin-bottom: 64px;
             display: block;
             text-align: center;
-            font-size: 14px;
-        }
 
-        &__sizeH {
-            text-align: center;
-            font-size: 32px;
+            &__size {
+                border-radius: 30px;
+                background: #9C0332;
+                padding-left: 74px;
+                padding-right: 74px;
+                padding-top: 13px;
+                padding-bottom: 13px;
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                border: none;
+            }
+
         }
 
     }
-
-    &__button {
-        margin-bottom: 64px;
-        display: block;
-        text-align: center;
-        &__size{
-            border-radius: 30px;
-    background: #9C0332;
-    padding-left: 74px;
-    padding-right: 74px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    border: none;
-        }
-    }
-
-
-}}
+}
