@@ -1,118 +1,106 @@
-//задание 1
-function returnNumber(a, b) {
-    if (a < b) {
-        return b;
-    } else {
-        return a;
+//Задание 1
+const searchTen = [1, 5, 4, 10, 0, 3];
+for (let index = 0; index < searchTen.length; index++) {
+    console.log(searchTen[index]);
+    if (searchTen[index] == 10) {
+        break
     }
 
 }
-//задание 2 
-function even(a) {
-    if (a % 2 === 0) {
-        return ('Чётное число');
-    } else {
-        return ('Нечётное число');
+//Задание 2
+const searhIndex = [1, 5, 4, 10, 0, 3];
+for (let index = 0; index < searhIndex.length; index++) {
+    if (searhIndex[index] == 4) {
+        console.log(index);
     }
 
 }
-//Задание 3.1
-
-function quadro(a) {
-    console.log(Math.sqrt(a));
-}
-
-function quadroIN(a) {
-    
-    return Math.pow(a, 2);
-}
+//Задание 3
+const join = [1, 3, 5, 10, 20];
+let str = join.join(' ');
+console.log(str);
 //Задание 4
-
-
-function age() {
-    let a = prompt('сколько вам лет')
-    if (a < 0) {
-        console.log('Вы ввели неправильное значение');
-    } else if (a > 0 && a <= 12) {
-        console.log('Привет, друг!');
+let arr = []
+for (let index = 0; index < 3; index++) {
+    arr[index] = [];
+    for (let i = 0; i < 3; i++) {
+        arr[index][i] = 1;
     }
-    else console.log('Добро пожаловать!');
-
-
 }
-
+console.log(arr);
 //Задание 5
-function number1(a, b) {
-    if (isNaN(a) || isNaN(b)) {
-        return 'Одно или оба значения не являются числом'
-    } else {
-        return a * b;
-    }
-
-}
-number1(12, "dgsd")
-number1(12, 12)
+let push = [1, 1, 1];
+push.push(2, 2, 2);
+console.log(push);
 //Задание 6
-function number2() {
-    let num = promt ('Введиткк число');
-    num = Number(num);
-    if (isNaN(num)) {
-        return 'Переданниый параметр не является числом'
-    } else {
-        return `${num} в кубе равняется ${num ** 3}`;
-    }
+const letter = [9, 8, 7, 'a', 6, 5];
+const withOutLetter = letter.filter(function (number) {
+    return number != 'a';
 
-}
-
+});
+console.log(withOutLetter.sort());
 //Задание 7
-function getArea() {
-    return Math.PI * this.radius ** 2
+let message = Number(prompt('Угадайте число'));
+const guess = [9, 8, 7, 6, 5];
+let isGuess = guess.includes(message);
+if (isGuess == true) {
+    alert("Угадал")
+} else {
+    alert("Не угадал")
 };
-function getPerimetr() {
-    return 2 * Math.PI * this.radius
-};
-
-const circle1 = {
-    radius: 12,
-    getArea,
-    getPerimetr,
-};
-const circle2 = {
-    radius: 11,
-    getArea,
-    getPerimetr,
-};
-circle1.getPerimetr()
 //Задание 8
-function firstGame(a) {
-    switch (a) {
-        case 12:
-        case 1:
-        case 2:
-            console.log("Зима");
-            break;
-        case 3:
-        case 4:
-        case 5:
-            console.log("Весна");
-            break;
-        case 6:
-        case 7:
-        case 8:
-            console.log("Лето");
-            break;
-        case 9:
-        case 10:
-        case 11:
-            console.log("Осень");
-            break;
-        default:
-            console.log('Неверно введён номер месяца');
-            break;
-    
+let line = 'abcdef'
+let result = line.split('');
+let line2 = result.reverse();
+console.log(line2.join(''));
+//Задание 9
+const massiveTwo = [
+    [1, 2, 3],
+    [4, 5, 6]];
+const flat = massiveTwo.flat()
+console.log(flat);
+//Задание 10
+let numbers = [1, 4, 3, 2, 5, 6, 7, 8, 10, 9];
+for (let i = 0; i < numbers.length - 1; i++) {
+    console.log(numbers[i] + numbers[i + 1]);
+
 }
+//Задание 11
+function squared(arr) {
+    return arr.map(num => num ** 2)
 }
-firstGame(12)
-firstGame(4)
-firstGame(6)
-firstGame(11)
+//Задание 12
+function words(arr) {
+    return arr.map(el => el.length)
+}
+//Задание 13
+function positive(array) {
+    return array.filter(value => {
+        if (value < 0) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+}
+console.log(positive([-1, -2, -36, 14, 17]));
+//Задание 14
+const generateArray = (length, max) => (
+    [...new Array(length)]
+        .map(() => Math.round(Math.random() * max))
+);
+const numbers14 = generateArray(10, 10);
+const evenOnly = numbers14.filter(function (n) {
+    const remainder = n % 2
+    return remainder === 0
+})
+console.log(numbers14);
+console.log(evenOnly);
+//Задание 15
+const generateArray15 = (length, max) => (
+    [...new Array(length)]
+        .map(() => Math.round(Math.random() * max))
+);
+let numbers15 = generateArray15(6, 10);
+let acc = numbers15.reduce((a, b) => (a + b)) / numbers15.length;
+console.log(acc);
