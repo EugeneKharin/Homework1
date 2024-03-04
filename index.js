@@ -96,7 +96,7 @@ const evenOnly = numbers14.filter(function (n) {
 })
 console.log(numbers14);
 console.log(evenOnly);
-//Задание 15
+//Задание 15м
 const generateArray15 = (length, max) => (
     [...new Array(length)]
         .map(() => Math.round(Math.random() * max))
