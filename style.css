@@ -163,6 +163,14 @@
   border: none;
 }
 
+.secondImg {
+  order: 2;
+}
+
+.secondText {
+  order: 0;
+}
+
 @media (max-width: 767px) {
   .top {
     padding-left: 16px;

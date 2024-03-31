@@ -1,106 +1,89 @@
 //Задание 1
-const searchTen = [1, 5, 4, 10, 0, 3];
-for (let index = 0; index < searchTen.length; index++) {
-    console.log(searchTen[index]);
-    if (searchTen[index] == 10) {
-        break
-    }
+let js = 'js';
+console.log(js.toUpperCase());
+// Задание 2
+function searchStr(array, str) {
+   let newM = [];
+   let zero = 0;
+   for (let index = 0; index < array.length; index++) {
+      if (array[index].startsWith(str) == true) {
+         newM[zero] = array[index];
+         zero += 1;
 
+      }
+   }
+   return newM;
 }
-//Задание 2
-const searhIndex = [1, 5, 4, 10, 0, 3];
-for (let index = 0; index < searhIndex.length; index++) {
-    if (searhIndex[index] == 4) {
-        console.log(index);
-    }
-
-}
+console.log(searchStr(['кк', 'рр', 'кр', 'пп'], 'к'));
 //Задание 3
-const join = [1, 3, 5, 10, 20];
-let str = join.join(' ');
-console.log(str);
+let number = Number(32.58884);
+console.log(Math.round(number));
+console.log(Math.floor(number));
+console.log(Math.ceil(number));
 //Задание 4
-let arr = []
-for (let index = 0; index < 3; index++) {
-    arr[index] = [];
-    for (let i = 0; i < 3; i++) {
-        arr[index][i] = 1;
-    }
-}
-console.log(arr);
+console.log(Math.min(52, 53, 49, 77, 21, 32));
+console.log(Math.max(52, 53, 49, 77, 21, 32));
 //Задание 5
-let push = [1, 1, 1];
-push.push(2, 2, 2);
-console.log(push);
+function random() {
+   let randomOne = Math.random() * 10;
+   return Math.floor(randomOne);
+}
+console.log(random());
 //Задание 6
-const letter = [9, 8, 7, 'a', 6, 5];
-const withOutLetter = letter.filter(function (number) {
-    return number != 'a';
+function massiveBack(int) {
+   let massiveZero = []
+   for (let index = 0; index < Math.round(int / 2); index++) {
+      massiveZero[index] = Math.floor(Math.random() * int);
 
-});
-console.log(withOutLetter.sort());
+   }
+   return massiveZero
+}
+console.log(massiveBack(34));
 //Задание 7
-let message = Number(prompt('Угадайте число'));
-const guess = [9, 8, 7, 6, 5];
-let isGuess = guess.includes(message);
-if (isGuess == true) {
-    alert("Угадал")
-} else {
-    alert("Не угадал")
-};
+function twoInt(a, b) {
+   return a + Math.floor(Math.random() * (b - a));
+}
+console.log(twoInt(78, 45));
 //Задание 8
-let line = 'abcdef'
-let result = line.split('');
-let line2 = result.reverse();
-console.log(line2.join(''));
+console.log(Date());
 //Задание 9
-const massiveTwo = [
-    [1, 2, 3],
-    [4, 5, 6]];
-const flat = massiveTwo.flat()
-console.log(flat);
+let currentDate = new Date()
+currentDate.setDate(currentDate.getDate() + 73)
+console.log(currentDate)
 //Задание 10
-let numbers = [1, 4, 3, 2, 5, 6, 7, 8, 10, 9];
-for (let i = 0; i < numbers.length - 1; i++) {
-    console.log(numbers[i] + numbers[i + 1]);
+function userDate(year, month, day, hours, minutes, seconds) {
+   const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+   const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
+   const date = new Date(year, month - 1, day, hours, minutes, seconds);
+
+   const formattedDate = `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()} — это ${days[date.getDay()]}.`;
+   const formattedTime = `Время: ${date.getHours()} часов ${date.getMinutes()} минут ${date.getSeconds()} секунд`;
+
+   return `${formattedDate}\n${formattedTime}`;
 }
-//Задание 11
-function squared(arr) {
-    return arr.map(num => num ** 2)
+
+console.log(userDate(2011, 10, 10, 10, 10, 10));
+// Задание 11 
+const fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин']
+function shuffleArray(array) {
+   const result = array.slice();
+   for (let i = result.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [result[i], result[j]] = [result[j], result[i]];
+   }
+   return result;
 }
-//Задание 12
-function words(arr) {
-    return arr.map(el => el.length)
+function fruitGame() {
+   const shuffledFruits = shuffleArray(fruits);
+   alert('Запомните порядок фруктов: ' + shuffledFruits.join(', '));
+   const firstGuess = prompt('Введите первое слово:');
+   const secondGuess = prompt('Введите последнее слово:');
+
+   if (firstGuess.toLowerCase() === shuffledFruits[0].toLowerCase() && secondGuess.toLowerCase() === shuffledFruits[shuffledFruits.length - 1].toLowerCase()) {
+      alert('Поздравляем, вы угадали оба слова!');
+   } else {
+      alert('Вы проиграли, попробуйте еще раз.');
+   }
 }
-//Задание 13
-function positive(array) {
-    return array.filter(value => {
-        if (value < 0) {
-            return true;
-        } else {
-            return false;
-        }
-    });
-}
-console.log(positive([-1, -2, -36, 14, 17]));
-//Задание 14
-const generateArray = (length, max) => (
-    [...new Array(length)]
-        .map(() => Math.round(Math.random() * max))
-);
-const numbers14 = generateArray(10, 10);
-const evenOnly = numbers14.filter(function (n) {
-    const remainder = n % 2
-    return remainder === 0
-})
-console.log(numbers14);
-console.log(evenOnly);
-//Задание 15м
-const generateArray15 = (length, max) => (
-    [...new Array(length)]
-        .map(() => Math.round(Math.random() * max))
-);
-let numbers15 = generateArray15(6, 10);
-let acc = numbers15.reduce((a, b) => (a + b)) / numbers15.length;
-console.log(acc);
+
