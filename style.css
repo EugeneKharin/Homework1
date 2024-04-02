@@ -106,4 +106,145 @@
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
+}
+
+.content__box:hover {
+  color: #44D2FF;
+  box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+.firstGame {
+  background-color: #000915;
+  display: flex;
+  justify-content: space-around;
+  gap: 135px;
+}
+.firstGame__text {
+  padding-top: 410px;
+}
+.firstGame__text__sizeH {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+}
+.firstGame__text__sizeT {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.firstGame__img {
+  padding-top: 361px;
+  padding-bottom: 233px;
+}
+
+.firstGame__button__size {
+  border-radius: 30px;
+  background: #9C0332;
+  padding-left: 74px;
+  padding-right: 74px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+}
+
+.secondImg {
+  order: 2;
+}
+
+.secondText {
+  order: 0;
+}
+
+@media (max-width: 767px) {
+  .top {
+    padding-left: 16px;
+    padding-right: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .top__head {
+    padding-top: 238px;
+    text-align: center;
+    font-size: 32px;
+  }
+  .top__text {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+  .button {
+    margin-left: 70px;
+    margin-right: 70x;
+    margin-bottom: 366px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .firstGame {
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  .firstGame__img {
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .firstGame__img__size {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 344px;
+    height: 236px;
+  }
+  .firstGame__text__sizeT {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+  .firstGame__text__sizeH {
+    text-align: center;
+    font-size: 32px;
+  }
+  .firstGame__button {
+    margin-bottom: 64px;
+    display: block;
+    text-align: center;
+  }
+  .firstGame__button__size {
+    border-radius: 30px;
+    background: #9C0332;
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+  }
 }/*# sourceMappingURL=style.css.map */
